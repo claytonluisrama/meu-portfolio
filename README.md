@@ -6,7 +6,7 @@ Bem-vindo ao meu repositório de portfólio! Aqui você encontra uma coleção d
 
 ### 1. Currículo Web (`/curriculo-web`)
 Um site estático desenvolvido em HTML que funciona como o meu currículo online. 
-* **Tecnologias:** HTML, CSS (se tiver)
+* **Tecnologias:** HTML
 * **Objetivo:** Apresentar minha trajetória e habilidades de forma rápida e acessível.
 
 ### 2. Pedal de Guitarra (`/pedal-guitarra`)
