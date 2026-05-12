@@ -5,6 +5,7 @@ Bem-vindo ao meu repositório de portfólio! Aqui você encontra uma coleção d
 ## Projetos Neste Repositório
 
 ### 1. Currículo Web (`/curriculo-web`)
+[Clique aqui para acessar o site do meu Currículo Web!](https://claytonluisrama.github.io/meu-portfolio/curriculo-web/)
 Um site estático desenvolvido em HTML que funciona como o meu currículo online. 
 * **Tecnologias:** HTML
 * **Objetivo:** Apresentar minha trajetória e habilidades de forma rápida e acessível.
