@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clayton Ramalho | Portfolio</title>
+    <style>
+        /* Variáveis para facilitar a manutenção */
+        :root {
+            --primary: #10b981;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --border: #334155;
+        }
+
+        body { 
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            color: var(--text-main); 
+            background-color: var(--bg-dark); 
+        }
+
+        header { 
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            padding: 5rem 1rem; 
+            text-align: center; 
+            border-bottom: 1px solid var(--border); 
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; }
+
+        section { 
+            background: var(--bg-card); 
+            padding: 2.5rem; 
+            border-radius: 16px; 
+            margin-bottom: 2.5rem; 
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease;
+        }
+
+        h1, h2, h3 { color: var(--primary); margin-top: 0; letter-spacing: -0.02em; }
+        h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
+        header p { color: var(--text-dim); font-size: 1.2rem; max-width: 700px; margin: 0.5rem auto; }
+
+        /* Grid de Projetos */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .project-card { 
+            background: rgba(15, 23, 42, 0.5); 
+            border: 1px solid var(--border);
+            padding: 1.5rem; 
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            background: rgba(15, 23, 42, 0.8);
+        }
+
+        .contact-links { margin-top: 1.5rem; }
+        .contact-links a { 
+            display: inline-block; 
+            margin: 0 10px 10px 0; 
+            color: var(--primary); 
+            text-decoration: none; 
+            font-weight: 600; 
+            border: 1px solid var(--primary); 
+            padding: 10px 20px; 
+            border-radius: 8px; 
+            transition: 0.3s; 
+        }
+
+        .contact-links a:hover { 
+            background: var(--primary); 
+            color: var(--bg-dark); 
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+        }
+
+        .tag { 
+            background: rgba(16, 185, 129, 0.1); 
+            color: var(--primary); 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+            font-size: 0.75rem; 
+            margin-right: 5px; 
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        ul { padding-left: 1.2rem; color: var(--text-dim); }
+        li strong { color: var(--text-main); }
+        
+        footer { text-align: center; padding: 4rem 2rem; color: #64748b; font-size: 0.9rem; }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            section { padding: 1.5rem; }
+            .contact-links a { display: block; margin-right: 0; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Clayton Ramalho</h1>
+    <p>Engenharia de Computação (CEUB) | Hardware, C & Audio Engineering</p>
+</header>
+
+<div class="container">
+    
+    <section id="perfil">
+        <h2>Perfil Pessoal</h2>
+        <p>
+            Olá! Sou o <strong>Clayton Luis Ramalho Júnior</strong>, graduando em Engenharia de Computação no CEUB e músico formado pelo <strong>Conservatório Carlos Gomes</strong>. 
+            Atuo no cenário musical há quase uma década e hoje foco em unir minha bagagem artística e prática com a tecnologia, através do desenvolvimento de <strong>hardware e eletrônica analógica</strong> voltados para áudio.
+        </p>
+        <div class="contact-links">
+            <a href="mailto:claytonluisrama@gmail.com">Email: claytonluisrama@gmail.com</a>
+            <a href="https://www.linkedin.com/in/clayton-luis-ramalho-j%C3%BAnior-69b082403/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/claytonluisrama" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos de Destaque</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Projeto "Um Pedal por Mês"</h3>
+                <div><span class="tag">Hardware</span> <span class="tag">Eletrônica</span></div>
+                <p>Construção técnica de pedais de efeito para guitarra, aplicando conhecimentos de circuitos e processamento de sinal analógico.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Desenvolvimento em C</h3>
+                <div><span class="tag">C</span> <span class="tag">Lógica de Programação</span> <span class="tag">Acadêmico</span></div>
+                <p>Estudos acadêmicos focados em algoritmos, estruturas de dados e lógica de programação através das disciplinas da Engenharia de Computação.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacao">
+        <h2>Habilidades & Formação</h2>
+        <div class="skills-list">
+            <div>
+                <h3>Educação</h3>
+                <ul>
+                    <li><strong>Engenharia de Comp.:</strong> CEUB (2026 - Presente)</li>
+                    <li><strong>Música Popular:</strong> Cons. Carlos Gomes (2023 - 2025)</li>
+                    <li><strong>Prática Musical:</strong> School of Rock Campinas (2019 - 2022)</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Técnico em Áudio</h3>
+                <ul>
+                    <li>Produção Musical (FL Studio)</li>
+                    <li>Mixagem e Som ao Vivo</li>
+                    <li>Suporte de Palco (Roadie)</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Idiomas & Soft Skills</h3>
+                <ul>
+                    <li><strong>Inglês:</strong> Compreensão fluente, fala intermediária</li>
+                    <li>Liderança em projetos de bandas</li>
+                    <li>Resolução de problemas sob pressão</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2026 Clayton Luis Ramalho Júnior — Desenvolvido com foco em Áudio & Tecnologia
+</footer>
+
+</body>
+</html>
