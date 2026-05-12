@@ -15,4 +15,4 @@ Projeto de eletrônica de um pedal de guitarra.
 * **Objetivo:** Aplicar conhecimentos de esquemáticos e design de circuitos na prática.
 
 ---
-*Este repositório foi criado como parte do Desafio de Criação de Repositório com Versionamento.*
+
